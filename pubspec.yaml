@@ -37,3 +37,5 @@ flutter_icons:
     android: true
     # ios: true
     image_path: "assets/images/logos/icon_just_red.png"
+    adaptive_icon_background: "#ed1e79"
+    adaptive_icon_foreground: "assets/images/logos/icon_just_red.png"

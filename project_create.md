@@ -73,7 +73,7 @@ dev_dependencies:
 
 flutter_icons:
     android: true
-    ios: true
+    # ios: true
     image_path: "assets/images/logos/icon_just_red.png"
 
 ```
@@ -91,6 +91,17 @@ flutter_icons:
     ... >
 </application>
 ```
+
+
+<br>
+
+### Windows için ayarlamalar
+
+CMake'in güncel olduğundan emin olun (en az 3.10 önerilir): 
+- https://cmake.org/download/
+
+
+
 
 
 <br><br><br>
