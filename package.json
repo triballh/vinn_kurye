@@ -1,0 +1,21 @@
+{
+    "name": "vinn_kurye",
+    "main": "lib/main.dart",
+    "scripts": {
+        "run:app": "flutter run",
+        "run:debug": "flutter run --debug",
+        "run:profile": "flutter run --profile",
+        "test": "flutter test",
+        "test:coverage": "flutter test --coverage",
+        "analyze": "flutter analyze",
+        "format": "flutter format .",
+        "build:web": "flutter build web --release",
+        "build:apk": "flutter build apk --release",
+        "build:appbundle": "flutter build appbundle --release",
+        "build:ios": "flutter build ios --release",
+        "clean": "flutter clean",
+        "pub:get": "flutter pub get",
+        "pub:upgrade": "flutter pub upgrade",
+        "pub:outdated": "flutter pub outdated"
+    }
+}

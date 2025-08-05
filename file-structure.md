@@ -1,0 +1,293 @@
+# VIP KURYE PROJESİ NOTLARI
+
+
+
+[⬅️ Ana döküman dosyasına git](/../README.md) 
+
+--- 
+<br><br>
+
+
+
+# KLASÖR YAPISI
+
+- android/
+- ios/
+- lib/
+  - main.dart
+  - firebase_options.dart
+  - env_config.dart
+  - routes.dart
+  - core/
+    - constants/
+      - app_constants.dart
+      - string_constants.dart
+      - firebase_constants.dart
+      - api_constants.dart
+      - image_constants.dart
+      - route_constants.dart
+    - theme/
+      - theme_manager.dart
+      - app_colors.dart
+      - app_theme.dart
+    - services/
+      - firebase_auth_service.dart
+      - firestore_database_service.dart
+      - firebase_storage_service.dart
+      - firebase_notification_service.dart
+    - local_storage/
+      - local_storage_service.dart
+      - hive_helper.dart
+      - cache_manager.dart
+    - customer_support/
+      - support_service.dart
+      - feedback_service.dart
+      - faq_helper.dart
+      - chatbot_service.dart
+    - utils/
+      - validators.dart
+      - location_helper.dart
+      - custom_widgets.dart
+      - qr_code_helper.dart
+      - pin_generator.dart
+      - matching_algorithm.dart
+      - route_optimizer.dart
+      - commission_calculator.dart
+      - bonus_system.dart
+    - network/
+      - network_service.dart
+      - api_client.dart
+    - error/
+      - error_handler.dart
+    - logger/
+      - logger.dart
+    - permissions/
+      - permission_helper.dart
+    - notifications/
+      - push_notification_helper.dart
+    - remote_config/
+      - remote_config_service.dart
+    - security/
+      - security_helper.dart
+    - analytics/
+      - analytics_service.dart
+    - app_update/
+      - update_manager.dart
+    - background_tasks/
+      - background_task_manager.dart
+    - localization/
+      - localization_manager.dart
+    - device_info/
+      - device_info_helper.dart
+    - validators/
+      - form_validators.dart
+      - input_validators.dart
+    - app_config/
+      - app_config.dart
+    - third_party/
+      - payment_service.dart
+      - map_service.dart
+      - social_login_service.dart
+    - testing/
+      - mock_service.dart
+      - test_helper.dart
+    - experiments/
+      - ab_test_manager.dart
+    - onboarding/
+      - onboarding_manager.dart
+    - state_management/
+      - provider_setup.dart
+      - bloc_setup.dart
+      - riverpod_setup.dart
+  - repository/
+    - delivery_repository.dart
+    - user_repository.dart
+    - support_repository.dart
+    - chat_repository.dart
+    - notification_repository.dart
+    - payment_repository.dart
+    - location_repository.dart
+    - rating_repository.dart
+  - exceptions/
+    - app_exception.dart
+  - extensions/
+    - string_extensions.dart
+    - date_extensions.dart
+  - widgets/
+    - common/
+      - app_bar_widget.dart
+      - bottom_navigation_widget.dart
+      - drawer_widget.dart
+      - search_bar_widget.dart
+      - filter_widget.dart
+      - empty_state_widget.dart
+      - error_widget.dart
+      - network_image_widget.dart
+      - shimmer_widget.dart
+      - dialog_widgets.dart
+      - snackbar_widgets.dart
+    - avatar_widget.dart
+    - rating_star.dart
+    - support_button.dart
+  - helpers/
+    - format_helper.dart
+    - date_helper.dart
+    - currency_helper.dart
+    - file_helper.dart
+    - image_helper.dart
+    - url_helper.dart
+  - generated/
+    - intl_en.arb
+    - intl_tr.arb
+    - l10n.dart
+    - app_localizations.dart
+    - app_localizations_en.dart
+    - app_localizations_tr.dart
+  - models/
+    - base_model.dart
+    - api_response_model.dart
+    - user_model.dart
+    - delivery_model.dart
+    - chat_model.dart
+    - rating_model.dart
+    - support_ticket_model.dart
+    - feedback_model.dart
+    - notification_model.dart
+    - location_model.dart
+    - payment_model.dart
+    - commission_model.dart
+    - bonus_model.dart
+    - verification_model.dart
+    - route_model.dart
+    - error_model.dart
+    - pagination_model.dart
+  - view/
+    - shared_widgets/
+      - custom_button.dart
+      - custom_text_field.dart
+      - loading_indicator.dart
+    - auth/
+      - login_view.dart
+      - signup_view.dart
+      - onboarding_view.dart
+    - courier/
+      - courier_home_view.dart
+      - courier_profile_view.dart
+      - delivery_detail_view.dart
+      - delivery_history_view.dart
+    - seller/
+      - seller_home_view.dart
+      - create_delivery_view.dart
+      - delivery_detail_view.dart
+      - seller_profile_view.dart
+    - customer/
+      - tracking_view.dart
+      - support_view.dart
+      - feedback_view.dart
+      - customer_profile_view.dart
+    - shared/
+      - qr_scanner_view.dart
+      - map_view.dart
+      - chat_view.dart
+      - notification_view.dart
+      - settings_view.dart
+      - app_info_view.dart
+    - admin/
+      - admin_dashboard_view.dart
+      - user_management_view.dart
+      - delivery_management_view.dart
+      - courier_management_view.dart
+      - seller_management_view.dart
+      - stats_view.dart
+      - notification_management_view.dart
+      - bonus_management_view.dart
+      - support_management_view.dart
+      - feedback_management_view.dart
+  - view_models/
+    - auth_view_model.dart
+    - home_view_model.dart
+    - delivery_view_model.dart
+    - profile_view_model.dart
+    - admin_view_model.dart
+    - support_view_model.dart
+    - feedback_view_model.dart
+    - chat_view_model.dart
+    - notification_view_model.dart
+    - map_view_model.dart
+  - di/
+    - locator.dart // Dependency Injection setup
+  - analytics/
+    - analytics_service.dart
+  - mixins/
+    - validation_mixin.dart
+- test/
+  - unit/
+  - widget/
+  - admin/
+  - support/
+  - integration/
+  - e2e/
+  - mock_data/
+  - mock_services/
+- assets/
+  - images/
+    - logos/
+    - icons/
+    - backgrounds/
+    - illustrations/
+  - fonts/
+    - custom_fonts/
+  - lottie/
+    - animations/
+    - loading/
+  - json/
+    - config/
+  - admin/
+  - support/
+- docs/
+  - api.md
+  - architecture.md
+  - admin.md
+  - support.md
+  - contributing.md
+  - style_guide.md
+  - code_of_conduct.md
+  - auth_policies.md
+  - localization.md
+  - deployment.md
+  - testing.md
+  - performance.md
+- scripts/
+  - build.sh
+  - deploy.sh
+  - admin_deploy.sh
+  - support_deploy.sh
+  - test_report.sh
+  - firebase_rules_deploy.sh
+- firebase_rules/
+  - firestore.rules
+  - storage.rules
+- .env.example
+- .gitignore
+- CHANGELOG.md
+- LICENSE
+- CONTRIBUTING.md
+- CODEOWNERS
+- Dockerfile
+- docker-compose.yml
+- Makefile
+- pubspec.yaml
+- pubspec.lock
+- analysis_options.yaml
+- project.yaml
+- README.md
+
+
+
+
+
+
+<br><br><br>
+
+
+<hr><br>
