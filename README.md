@@ -1,10 +1,10 @@
-# VIP KURYE PROJESİ
+# VINN KURYE PROJESİ
 
-VIP Kurye, şehir içi acil teslimat ihtiyacını teknoloji destekli, son derece güvenli ve kullanıcı dostu bir deneyimle çözmeyi amaçlayan yeni nesil bir mobil teslimat platformudur. "Güven zinciri" adını verdiğimiz çok katmanlı doğrulama sistemiyle, gönderinin her anı güvence altına alınır.
+VINN Kurye, şehir içi acil teslimat ihtiyacını teknoloji destekli, son derece güvenli ve kullanıcı dostu bir deneyimle çözmeyi amaçlayan yeni nesil bir mobil teslimat platformudur. "Güven zinciri" adını verdiğimiz çok katmanlı doğrulama sistemiyle, gönderinin her anı güvence altına alınır.
 
 Platform, gönderi oluşturandan (Gönderici) paketi taşıyana (Kurye) ve teslim alana (Alıcı) kadar tüm süreci şeffaf, hızlı ve güvenli bir şekilde yönetmeyi amaçlar. 
 
-Geleneksel kurye hizmetlerinin aksine, VIP Kurye sadece bir taşıma aracı değil, aynı zamanda değerli ve acil gönderiler için özel ve güvenilir bir "VIP" hizmeti sunar.
+Geleneksel kurye hizmetlerinin aksine, VINN Kurye sadece bir taşıma aracı değil, aynı zamanda değerli ve acil gönderiler için özel ve güvenilir bir "VIP" hizmeti sunar.
 
 <br>
 
@@ -24,7 +24,7 @@ Platform, dört ana kullanıcı grubuna hizmet eder:
 
 ### Project-Docs klasörü:
 - [İş Akışı](./Project-Docs/is-akisi.md)  
-  VIP Kurye platformundaki satışçı, müşteri ve kurye iş akışlarının detayları.
+  VINN Kurye platformundaki satışçı, müşteri ve kurye iş akışlarının detayları.
 - [Roller](./Project-Docs/roller)  
   Kurye, satışçı ve müşteri rollerinin görevleri, yetkileri ve kategorileri.
 - [Teknik Gereksinimler](./Project-Docs/teknik-gereksinimler.md)  
@@ -39,7 +39,7 @@ Platform, dört ana kullanıcı grubuna hizmet eder:
 
 **Temel Amaç:** Şehir içi acil teslimat ihtiyacını, teknoloji destekli, son derece güvenli ve kullanıcı dostu bir deneyimle çözmek.
 
-**VIP Kurye**, acil kurye hizmetine ihtiyaç duyan kullanıcılar ile müsait kuryeler arasında köprü görevi gören çok taraflı bir dijital platformdur. Platform, dört ana kullanıcı grubuna hizmet eder:
+**VINN Kurye**, acil kurye hizmetine ihtiyaç duyan kullanıcılar ile müsait kuryeler arasında köprü görevi gören çok taraflı bir dijital platformdur. Platform, dört ana kullanıcı grubuna hizmet eder:
 - **İşletmeler/Satışçılar**: Ürünlerini müşterilere ulaştırmak isteyen
 - **Bireysel Müşteriler**: Acil gönderi ihtiyacı olan
 - **Kuryeler**: Esnek çalışma imkanı arayan

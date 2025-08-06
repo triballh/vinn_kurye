@@ -93,7 +93,7 @@ class LoginView extends StatelessWidget {
                               ),
                               Align(
                                 alignment: Alignment.centerLeft,
-                                child: TextButton(onPressed: () {}, child: const Text('Forgot Password?')),
+                                child: TextButton(onPressed: () {}, child: const Text('Balık hafızalıyım!')),
                               ),
                               const SizedBox(height: 12),
                               SizedBox(
@@ -106,7 +106,7 @@ class LoginView extends StatelessWidget {
                                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                                     textStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                                   ),
-                                  child: const Text('SIGN IN', style: TextStyle(color: Colors.black)),
+                                  child: const Text('GİRİŞ YAP', style: TextStyle(color: Colors.black)),
                                 ),
                               ),
                             ],

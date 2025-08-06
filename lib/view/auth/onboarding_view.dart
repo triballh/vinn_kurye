@@ -15,11 +15,38 @@ class OnboardingView extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.only(bottom: 100.0),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   _authButton(text: 'Giriş Yap', onPressed: () => Navigator.pushNamed(context, '/login')),
-                  const SizedBox(width: 16), // Yatay boşluk için width kullan
                   _authButton(text: 'Kayıt Ol', onPressed: () => Navigator.pushNamed(context, '/signup')),
+                ],
+              ),
+            ),
+          ),
+          Center(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 32.0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const Text(
+                    'Beklemek yok, VINN var',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Color.fromARGB(255, 242, 242, 242),
+                      fontSize: 16,
+                      fontWeight: FontWeight.w300,
+                    ),
+                  ),
+                  const Text(
+                    '\n Her kurye bir kahraman, her paket bir macera...',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Color.fromARGB(255, 203, 203, 203),
+                      fontSize: 14,
+                      fontWeight: FontWeight.w300,
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -29,6 +56,9 @@ class OnboardingView extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         onPressed: () => Navigator.pushNamed(context, '/app_info'),
         tooltip: 'Bilgi',
+        backgroundColor: const Color.fromARGB(255, 0, 54, 90),
+        foregroundColor: Colors.white,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
         child: const Icon(Icons.info_outline),
       ),
     );
@@ -39,8 +69,12 @@ class OnboardingView extends StatelessWidget {
     return ElevatedButton(
       onPressed: onPressed,
       style: ElevatedButton.styleFrom(
-        padding: const EdgeInsets.symmetric(vertical: 40, horizontal: 20),
-        textStyle: const TextStyle(fontSize: 16),
+        padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 50),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+        backgroundColor: const Color.fromARGB(255, 0, 78, 130),
+        foregroundColor: Colors.white,
+        textStyle: const TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.w600),
+        elevation: 5,
       ),
       child: Text(text ?? "Button"),
     );
