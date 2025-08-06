@@ -99,6 +99,7 @@ flutter pub run flutter_launcher_icons:main
 
 <br>
 
+
 ### Windows için ayarlamalar
 
 CMake'in güncel olduğundan emin olun (en az 3.10 önerilir): 
@@ -106,8 +107,23 @@ CMake'in güncel olduğundan emin olun (en az 3.10 önerilir):
 
 - Windows için:
 - windows/runner/resources/app_icon.ico dosyasını kendi .ico simgenizle değiştirin.
-- (En az 256x256 px önerilir, .ico formatında olmalı)
-- PNG'den .ico'ya dönüştürmek için online araçlar kullanabilirsiniz.
+- En az 256x256 px 
+
+
+
+<br>
+
+
+### WEB için ayarlamalar
+
+-  web/icons/Icon-192.png
+-  web/icons/Icon-512.png
+-  web/icons/Icon-maskable-192.png
+-  web/icons/Icon-maskable-512.png
+
+
+
+
 
 
 
