@@ -32,16 +32,11 @@ flutter:
         - pubspec.yaml
 
 flutter_icons:
+    # cmd -> flutter pub run flutter_launcher_icons:main
     android: true
     # ios: true
-    image_path: "assets/images/logos/icon_just_red_512.png"
+    image_path: "assets/images/logos/icon_mini_min_512.png"
     adaptive_icon_background: "#ffffff"
-    adaptive_icon_foreground: "assets/images/logos/icon_just_red_512.png"
-    # Web için:
-    # web/icons/ klasöründeki Icon-192.png, Icon-512.png, Icon-maskable-192.png, Icon-maskable-512.png dosyalarını
-    # kendi simgenizle değiştirin. (Boyutlar: 192x192 ve 512x512 px, PNG formatında olmalı)
-
-    # Windows için:
-    # windows/runner/resources/app_icon.ico dosyasını kendi .ico simgenizle değiştirin.
-    # (En az 256x256 px önerilir, .ico formatında olmalı)
-    # PNG'den .ico'ya dönüştürmek için online araçlar kullanabilirsiniz.
+    adaptive_icon_foreground: "assets/images/logos/icon_mini_min_512.png"
+    # remove_alpha_ios: true
+    remove_alpha_android: true

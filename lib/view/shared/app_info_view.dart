@@ -10,6 +10,7 @@ class AppInfoView extends StatefulWidget {
 
 class _AppInfoViewState extends State<AppInfoView> {
   Map<String, dynamic>? pubspecData;
+  String pubspecContent = '';
   bool isLoading = true;
 
   @override
@@ -21,6 +22,9 @@ class _AppInfoViewState extends State<AppInfoView> {
   Future<void> loadPubspecData() async {
     try {
       final String response = await rootBundle.loadString('pubspec.yaml');
+      pubspecContent = response.isEmpty
+          ? 'pubspec.yaml içeriği yüklenemedi.'
+          : response.replaceAll('gelen\r\n', '\n'); // Normalize line endings
       final List<String> lines = response.split('\n');
 
       Map<String, dynamic> data = {};
@@ -126,6 +130,7 @@ class _AppInfoViewState extends State<AppInfoView> {
                 children: [
                   // Uygulama Temel Bilgileri
                   Card(
+                    color: const Color.fromARGB(255, 204, 220, 187),
                     child: Padding(
                       padding: const EdgeInsets.all(16.0),
                       child: Column(
@@ -151,6 +156,38 @@ class _AppInfoViewState extends State<AppInfoView> {
                             pubspecData?['description'] ??
                                 'Açıklama bulunamadı',
                             style: const TextStyle(fontSize: 14),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 16),
+
+                  // pubspec.yaml TAMAMINI GÖSTER
+                  Card(
+                    color: const Color.fromARGB(255, 181, 181, 181),
+                    child: Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Text(
+                            'pubspec.yaml',
+                            style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          const SizedBox(height: 12),
+                          SingleChildScrollView(
+                            scrollDirection: Axis.horizontal,
+                            child: Text(
+                              pubspecContent,
+                              style: const TextStyle(
+                                fontFamily: 'monospace',
+                                fontSize: 13,
+                              ),
+                            ),
                           ),
                         ],
                       ),
