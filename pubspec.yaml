@@ -12,7 +12,6 @@ environment:
 dependencies:
     flutter:
         sdk: flutter
-
     cupertino_icons: ^1.0.8
     firebase_core: ^4.0.0
     firebase_auth: ^6.0.0
@@ -23,7 +22,6 @@ dependencies:
 dev_dependencies:
     flutter_test:
         sdk: flutter
-
     flutter_lints: ^6.0.0
     flutter_launcher_icons: ^0.14.4
 
@@ -36,6 +34,14 @@ flutter:
 flutter_icons:
     android: true
     # ios: true
-    image_path: "assets/images/logos/icon_just_red.png"
+    image_path: "assets/images/logos/icon_just_red_512.png"
     adaptive_icon_background: "#ed1e79"
-    adaptive_icon_foreground: "assets/images/logos/icon_just_red.png"
+    adaptive_icon_foreground: "assets/images/logos/icon_just_red_512.png"
+    # Web için:
+    # web/icons/ klasöründeki Icon-192.png, Icon-512.png, Icon-maskable-192.png, Icon-maskable-512.png dosyalarını
+    # kendi simgenizle değiştirin. (Boyutlar: 192x192 ve 512x512 px, PNG formatında olmalı)
+
+    # Windows için:
+    # windows/runner/resources/app_icon.ico dosyasını kendi .ico simgenizle değiştirin.
+    # (En az 256x256 px önerilir, .ico formatında olmalı)
+    # PNG'den .ico'ya dönüştürmek için online araçlar kullanabilirsiniz.

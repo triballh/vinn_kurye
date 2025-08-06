@@ -74,8 +74,12 @@ dev_dependencies:
 flutter_icons:
     android: true
     # ios: true
-    image_path: "assets/images/logos/icon_just_red.png"
-
+    image_path: "assets/images/logos/icon_just_red_512.png"
+    adaptive_icon_background: "#ffffff"
+    adaptive_icon_foreground: "assets/images/logos/icon_just_red_512.png"
+```
+```bash
+flutter pub run flutter_launcher_icons:main
 ```
 
 <br>
@@ -100,7 +104,10 @@ flutter_icons:
 CMake'in güncel olduğundan emin olun (en az 3.10 önerilir): 
 - https://cmake.org/download/
 
-
+- Windows için:
+- windows/runner/resources/app_icon.ico dosyasını kendi .ico simgenizle değiştirin.
+- (En az 256x256 px önerilir, .ico formatında olmalı)
+- PNG'den .ico'ya dönüştürmek için online araçlar kullanabilirsiniz.
 
 
 
