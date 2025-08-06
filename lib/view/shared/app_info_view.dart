@@ -27,7 +27,8 @@ class _AppInfoViewState extends State<AppInfoView> {
       bool inDependencies = false;
       bool inDevDependencies = false;
 
-      for (String line in lines) {
+      for (int i = 0; i < lines.length; i++) {
+        final line = lines[i];
         final trimmed = line.trim();
 
         if (trimmed.startsWith('name:')) {
@@ -47,19 +48,32 @@ class _AppInfoViewState extends State<AppInfoView> {
           inDependencies = false;
           inDevDependencies = true;
           data['dev_dependencies'] = <String, String>{};
-        } else if (inDependencies &&
-            trimmed.contains(':') &&
-            !trimmed.startsWith('flutter:')) {
+        } else if (inDependencies && trimmed.contains(':')) {
           final parts = trimmed.split(':');
-          if (parts.length >= 2 && !parts[0].trim().startsWith(' ')) {
-            data['dependencies'][parts[0].trim()] = parts[1].trim();
+          final key = parts[0].trim();
+          final value = parts.sublist(1).join(':').trim();
+
+          // Alt satırda tanımlı bağımlılık (ör: flutter: sdk: flutter)
+          if (value.isEmpty &&
+              i + 1 < lines.length &&
+              lines[i + 1].contains('sdk:')) {
+            final sdkLine = lines[i + 1].trim();
+            data['dependencies'][key] = sdkLine;
+          } else if (value.isNotEmpty) {
+            data['dependencies'][key] = value;
           }
-        } else if (inDevDependencies &&
-            trimmed.contains(':') &&
-            !trimmed.startsWith('flutter:')) {
+        } else if (inDevDependencies && trimmed.contains(':')) {
           final parts = trimmed.split(':');
-          if (parts.length >= 2 && !parts[0].trim().startsWith(' ')) {
-            data['dev_dependencies'][parts[0].trim()] = parts[1].trim();
+          final key = parts[0].trim();
+          final value = parts.sublist(1).join(':').trim();
+
+          if (value.isEmpty &&
+              i + 1 < lines.length &&
+              lines[i + 1].contains('sdk:')) {
+            final sdkLine = lines[i + 1].trim();
+            data['dev_dependencies'][key] = sdkLine;
+          } else if (value.isNotEmpty) {
+            data['dev_dependencies'][key] = value;
           }
         }
 

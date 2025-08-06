@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '/widgets/common/app_bar_widget.dart';
 
 class LoginView extends StatelessWidget {
   const LoginView({super.key});
@@ -6,7 +7,7 @@ class LoginView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Login')),
+      appBar: AppBarWidget(text: 'Kayıt Ol'),
       body: const Center(child: Text('Login Form')),
     );
   }
