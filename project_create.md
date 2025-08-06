@@ -86,10 +86,10 @@ flutter pub run flutter_launcher_icons:main
 
 ### Android için değişiklikler
 
+Uygulama İsmi: android\app\src\main\AndroidManifest.xml  -> android:label
 
 ```xml
 # filepath: android\app\src\main\AndroidManifest.xml
-
 <application
     android:enableOnBackInvokedCallback="true"
     ... >

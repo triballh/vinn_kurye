@@ -1,6 +1,5 @@
 // lib/view/auth/onboarding_view.dart
 import 'package:flutter/material.dart';
-import '../../widgets/common/app_bar_widget.dart';
 
 class OnboardingView extends StatelessWidget {
   const OnboardingView({super.key});
@@ -8,24 +7,24 @@ class OnboardingView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBarWidget(),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const Text('Onboarding Content', style: TextStyle(fontSize: 24)),
-            const SizedBox(height: 32),
-            _authButton(
-              text: 'Giriş Yap',
-              onPressed: () => Navigator.pushNamed(context, '/login'),
+      body: Stack(
+        children: [
+          Positioned.fill(child: Image.asset('assets/images/backgrounds/icon_16_9_.png', fit: BoxFit.cover)),
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: Padding(
+              padding: const EdgeInsets.only(bottom: 100.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  _authButton(text: 'Giriş Yap', onPressed: () => Navigator.pushNamed(context, '/login')),
+                  const SizedBox(width: 16), // Yatay boşluk için width kullan
+                  _authButton(text: 'Kayıt Ol', onPressed: () => Navigator.pushNamed(context, '/signup')),
+                ],
+              ),
             ),
-            const SizedBox(height: 16),
-            _authButton(
-              text: 'Kayıt Ol',
-              onPressed: () => Navigator.pushNamed(context, '/signup'),
-            ),
-          ], // children
-        ),
+          ),
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () => Navigator.pushNamed(context, '/app_info'),
@@ -36,11 +35,11 @@ class OnboardingView extends StatelessWidget {
   }
 
   // Sadece bu dosyada kullanılacak özel buton widget'ı
-  static Widget _authButton({String? text, VoidCallback? onPressed}) {
+  Widget _authButton({String? text, VoidCallback? onPressed}) {
     return ElevatedButton(
       onPressed: onPressed,
       style: ElevatedButton.styleFrom(
-        padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 32),
+        padding: const EdgeInsets.symmetric(vertical: 40, horizontal: 20),
         textStyle: const TextStyle(fontSize: 16),
       ),
       child: Text(text ?? "Button"),

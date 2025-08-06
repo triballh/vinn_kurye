@@ -29,6 +29,7 @@ flutter:
     uses-material-design: true
     assets:
         - assets/images/logos/
+        - assets/images/backgrounds/
         - pubspec.yaml
 
 flutter_icons:
