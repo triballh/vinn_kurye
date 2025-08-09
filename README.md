@@ -19,13 +19,13 @@ Platform, dört ana kullanıcı grubuna hizmet eder:
 
 ## 📋 İÇİNDEKİLER
 
-- [🎯 Proje Hakkında](#proje-hakkında)
-- [✨ Platform Özellikleri](#platform-özellikleri)
-- [🚀 Kurulum ve Çalıştırma](#kurulum-ve-çalıştırma)
-- [🏗️ Teknoloji Stack](#teknoloji-stack)
 - [📚 Proje Dokümantasyonu](#proje-dokümantasyonu)
-- [🤝 Katkıda Bulunma](#katkıda-bulunma)
-- [👥 Geliştirici Ekibi](#geliştirici-ekibi)
+- [🛠️ Gereksinimler](#gereksinimler)
+- [🏗️ Teknoloji Stack](#teknoloji-stack)
+- [✨ Özellikler](#özellikler)
+- [ℹ️ Proje Hakkında](#proje-hakkında)
+- [🚀 Platform Özellikleri](#platform-özellikleri)
+- [👨‍💻 Geliştirici Ekibi](#geliştirici-ekibi)
 
 
 ## 📚 Proje Dokümantasyonu
@@ -38,7 +38,9 @@ Proje ile ilgili detaylı teknik dokümantasyon ve iş süreçleri:
 | [👤 Roller](./project-docs/roller.md) | Sistem kullanıcılarının rolleri, yetkileri ve sorumlulukları |
 | [⚙️ Teknik Gereksinimler](./project-docs/teknik-gereksinimler.md) | Mobil uygulama, backend ve sistem gereksinimleri |
 | [🗄️ Veritabanı Yapısı](./project-docs/database-yapisi.md) | Firebase Firestore koleksiyonları ve veri modelleri |
-| [📁 Dosya Yapısı](./project-docs/file-structure.md) | Flutter proje organizasyonu ve klasör yapısı |
+| [📁 Klasör Yapısı](./project-docs/folder-structure.md) | Flutter proje klasörlerinin organizasyonu ve açıklamaları |
+| [📄 Dosya Yapısı](./project-docs/file-structure.md) | Temel dosyaların yapısı ve proje içindeki rolleri |
+
 
 
 ## Gereksinimler
@@ -57,6 +59,14 @@ Proje ile ilgili detaylı teknik dokümantasyon ve iş süreçleri:
 - **Notifications:** Firebase Cloud Messaging
 - **Platform:** Android, iOS, Web
 
+## Özellikler
+
+- 🔐 Firebase Authentication ile güvenli giriş/kayıt sistemi
+- 📱 Cross-platform (Android/iOS/Web) desteği
+- 🎨 Modern ve responsive UI tasarımı
+- ☁️ Firebase Cloud Firestore ile gerçek zamanlı veri senkronizasyonu
+- 📁 Firebase Storage ile dosya yönetimi
+- 🚀 Onboarding ekranları ile kullanıcı deneyimi
 
 
 <br><br>
@@ -142,7 +152,7 @@ NOT: **Kritik Başarı Faktörleri:**
 
 <hr><br>
 
-## Geliştiriciler
+## Geliştirici Ekibi
 
 - Mehmet Akif Akkoç [mefamex.com](https://mefamex.com) / [GitHub](https://github.com/Mefamex)  /  [info@mefamex.com](mailto:info@mefamex.com)
 - Halil Temur

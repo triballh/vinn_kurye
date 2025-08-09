@@ -1,15 +1,18 @@
-# VINN KURYE PROJESİ NOTLARI
+# VIP KURYE PROJESİ NOTLARI
 
 
 
 [⬅️ Ana döküman dosyasına git](../README.md) 
 
 --- 
+
+<br>
+
+> Genel bir bakış için : [folder-structure](./folder-structure.md) dosyasına bakabilirsiniz.
+
 <br><br>
 
-
-
-# KLASÖR YAPISI
+# DOSYA YAPISI
 
 - android/
 - ios/
@@ -27,6 +30,7 @@
       - image_constants.dart
       - route_constants.dart
     - theme/
+      - theme_manager.dart
       - app_colors.dart
       - app_theme.dart
     - services/
@@ -74,8 +78,6 @@
       - update_manager.dart
     - background_tasks/
       - background_task_manager.dart
-    - theme/
-      - theme_manager.dart
     - localization/
       - localization_manager.dart
     - device_info/
@@ -192,6 +194,7 @@
       - chat_view.dart
       - notification_view.dart
       - settings_view.dart
+      - app_info_view.dart
     - admin/
       - admin_dashboard_view.dart
       - user_management_view.dart
