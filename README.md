@@ -17,18 +17,46 @@ Platform, dört ana kullanıcı grubuna hizmet eder:
 
 <br><br>
 
-## İÇİNDEKİLER
+## 📋 İÇİNDEKİLER
 
-- [Proje Hakkında](#proje-hakkında)
-- [Platform Özellikleri](#platform-özellikleri)
+- [🎯 Proje Hakkında](#proje-hakkında)
+- [✨ Platform Özellikleri](#platform-özellikleri)
+- [🚀 Kurulum ve Çalıştırma](#kurulum-ve-çalıştırma)
+- [🏗️ Teknoloji Stack](#teknoloji-stack)
+- [📚 Proje Dokümantasyonu](#proje-dokümantasyonu)
+- [🤝 Katkıda Bulunma](#katkıda-bulunma)
+- [👥 Geliştirici Ekibi](#geliştirici-ekibi)
 
-### Project-Docs klasörü:
-- [İş Akışı](./Project-Docs/is-akisi.md)  
-  VINN Kurye platformundaki satışçı, müşteri ve kurye iş akışlarının detayları.
-- [Roller](./Project-Docs/roller)  
-  Kurye, satışçı ve müşteri rollerinin görevleri, yetkileri ve kategorileri.
-- [Teknik Gereksinimler](./Project-Docs/teknik-gereksinimler.md)  
-  Mobil uygulama, backend, güvenlik, entegrasyon ve monitoring gereksinimleri.
+
+## 📚 Proje Dokümantasyonu
+
+Proje ile ilgili detaylı teknik dokümantasyon ve iş süreçleri:
+
+| Dokuman | Açıklama |
+|---------|----------|
+| [🔄 İş Akışı](./project-docs/is-akisi.md) | Gönderici, kurye ve alıcı arasındaki süreç adımları ve iş akışları |
+| [👤 Roller](./project-docs/roller.md) | Sistem kullanıcılarının rolleri, yetkileri ve sorumlulukları |
+| [⚙️ Teknik Gereksinimler](./project-docs/teknik-gereksinimler.md) | Mobil uygulama, backend ve sistem gereksinimleri |
+| [🗄️ Veritabanı Yapısı](./project-docs/database-yapisi.md) | Firebase Firestore koleksiyonları ve veri modelleri |
+| [📁 Dosya Yapısı](./project-docs/file-structure.md) | Flutter proje organizasyonu ve klasör yapısı |
+
+
+## Gereksinimler
+- Flutter SDK (3.0+)
+- Dart SDK (3.0+)
+- Firebase hesabı ve yapılandırması
+- Android Studio / VS Code
+
+## 🏗️ Teknoloji Stack
+
+- **Frontend:** Flutter 3.x, Dart
+- **Backend:** Firebase (Auth, Firestore, Storage, Functions)
+- **State Management:** Provider
+- **UI Framework:** Material Design 3
+- **Maps:** Google Maps API
+- **Notifications:** Firebase Cloud Messaging
+- **Platform:** Android, iOS, Web
+
 
 
 <br><br>
